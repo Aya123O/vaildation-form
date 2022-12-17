@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+</head>
+<body>
+<div class="btn1">
+  <button class="button-51" role="button">Vaildation Form</button>
+</div>
+  <div class="btn2">
+    <button class="button-49" id="creataccount" role="button">Creat Account</button>
+  </div>
+<div class="parent" id="myparent">
+  <form id="myform" action="/action_page.php">
+    <div class="container">
+      <h1 style="color: #283618;">Creat Account</h1>
+      <div id="close">&#10006;</div>
+      <p style="color: #16425b;">Please fill in this form to create an account.</p>
+      <hr>
+
+    <div class="papa">
+      <label for="user"><b>UserName</b></label>
+      <input type="text" placeholder="Enter Name" name="user" id="user" required>
+      <div class="icon-check-circle"></div>
+      <p id="usermessage">at least 3 character</p>
+    </div>
+    <div class="papa">
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" id="email" required>
+      <div class="icon-check-circle"></div>
+      <p id="messpar">please enter acorrect email address</p>
+    </div>
+
+    <div class="papa">
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      <div class="icon-check-circle"></div>
+      <p id="pswmess">password must be at least 8 character 1 uppercase letter  1 number</p>
+    </div>
+    <div class="papa">
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+      <div class="icon-check-circle"></div>
+      <p id="psw-repeatmess">please check the password matches</p>
+    </div>
+
+      <button type="submit" class="registerbtn" disabled id="bttn">Register</button>
+    </div>
+
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+</form>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
